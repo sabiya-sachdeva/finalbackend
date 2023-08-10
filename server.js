@@ -4,7 +4,10 @@ const cors=require('cors');
 
 const mongoose=require('mongoose')
 const bookRouter=require('./routes/book')
-const uri="mongodb+srv://mylibrary:123@bookinfo.qi1yw1g.mongodb.net/?retryWrites=true&w=majority"
+
+
+//const uri="mongodb://127.0.0.1:27017/BookList";
+const uri="mongodb+srv://user:123@cluster0.24chgkl.mongodb.net/?retryWrites=true&w=majority"
 
 mongoose.connect(uri,{
     useNewUrlParser:true
